@@ -1,13 +1,13 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
-one:
-  title: MyString
-  description: MyText
-  image_url: MyString
-  price: 9.99
+ruby:
+  title: mewtwo
+  description: mewtwo is the most strong and rare character for this version.
+  image_url: mewtwo.jpg
+  price: 3000
 
 two:
-  title: MyString
-  description: MyText
-  image_url: MyString
-  price: 9.99
+  title: bangi
+  description: this card is appeared in gold and silver version. for instance, the monster become more strong than before version. this is the one of this instance.
+  image_url: bangi.jpg
+  price: 800
