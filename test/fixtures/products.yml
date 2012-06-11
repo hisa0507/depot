@@ -1,6 +1,6 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
-ruby:
+one:
   title: mewtwo
   description: mewtwo is the most strong and rare character for this version.
   image_url: mewtwo.jpg
