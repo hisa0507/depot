@@ -10,6 +10,10 @@
 # 日本語版については http://ssl.ohmsha.co.jp/cgi-bin/menu.cgi?ISBN=978-4-274-06866-9
 #---
 # be sure to change these
+require 'capistrano_colors'
+require "bundler/capistrano"
+require "bundler/capistrano"
+
 set :user, 'HanLab'
 set :domain, 'fullu.org'
 set :application, 'depot'
@@ -22,7 +26,7 @@ set :rvm_type, :user
 
 # file paths
 set :repository,  "#{user}@#{domain}:git/#{application}.git" 
-set :deploy_to, "/home/#{user}/#{domain}" 
+set :deploy_to, "/var/www/#{application}" 
 
 # distribute your applications across servers (the instructions below put them
 # all on the same server, defined above as 'domain', adjust as necessary)
@@ -38,8 +42,8 @@ default_run_options[:pty] = true
 # if (for example) you have locally installed gems or applications.  Note:
 # this needs to contain the full values for the variables set, not simply
 # the deltas.
-# default_environment['PATH']='<your paths>:/usr/local/bin:/usr/bin:/bin'
-# default_environment['GEM_PATH']='<your paths>:/usr/lib/ruby/gems/1.8'
+#default_environment['PATH']='<your paths>:/usr/local/bin:/usr/bin:/bin'
+#default_environment['GEM_PATH']='<your paths>:/usr/lib/ruby/gems/1.8'
 
 # miscellaneous options
 set :deploy_via, :remote_cache
