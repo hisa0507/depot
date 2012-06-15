@@ -25,7 +25,7 @@ set :rvm_ruby_string, '1.9.3'
 set :rvm_type, :user
 
 # file paths
-set :repository,  "#{user}@#{domain}:git/#{application}.git" 
+set :repository,  "/home/HanLab/git/#{application}.git" 
 set :deploy_to, "/var/www/#{application}" 
 
 # distribute your applications across servers (the instructions below put them
